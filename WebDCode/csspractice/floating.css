@@ -1,0 +1,23 @@
+#container{
+    background-color: burlywood;
+    width: 100%;
+    height: 700px;
+}
+
+#container .col1{
+    background-color: blueviolet;
+    width: 20%;
+    height: 500px;
+    float: right;
+}
+#container .col2{
+    background-color: brown;
+    width: 15%;
+    height: 100px;
+    float: left;
+}
+#container .space{
+    /* width: 10px;
+    display: block; */
+    clear: left;    
+}
