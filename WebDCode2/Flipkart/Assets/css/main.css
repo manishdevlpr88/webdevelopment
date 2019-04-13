@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+#header{
+    background-color: #2874F0;
+}
+#header .container{
+    width: 70%;
+    /* padding: 8px 0px; */
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0px auto;
+}
+.row{
+    display: flex;
+}
+
+#header .exploreplus{
+    position: absolute;
+    font-size: 13px;
+    font-style: italic;
+    bottom: 2px;
+}
+#header .exploreplus .explore{
+    color: white;
+}
+#header .exploreplus .plus{
+    color: #CFA94B;
+}
+#header .exploreplus .plus i{
+    font-size: 10px;
+    
+}
+#header .search button i{
+    font-size: 17px;    
+}
+
+#header .logo{
+    position: relative;
+    width: 11%;
+}
+#header .logo img{
+    width: 80%;
+    height: 22px;
+}
+
+#header .search{
+    position: relative;
+    width: 59%;
+}
+#header .search input{
+    width: 90%;
+    height: 30px;
+}
+#header .search input::placeholder{
+    padding-left: 8px;
+    font-size: 15px;
+}
+#header .search button{
+    position: absolute;
+    background-color: white;
+    /* border: 1px 1px 1px 0px; */
+    border: none;
+    width: 7%;
+    height: 35px;
+}
+#header .cart{
+    padding-top: 10px;
+    width: 25%;
+}
+#header .cart a{
+    font-size: 17px;
+    color: white;
+
+    padding-right: 15px;
+}
