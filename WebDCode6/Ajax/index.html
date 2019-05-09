@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+            height: 40px;;
+        }
+        input{
+            font-size: 20px;
+            width: 200px;
+            height: 35px;
+        }
+        img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchbox">
+    <button onclick="fetchdata()">Fetch</button>
+    <div id="img">
+
+    </div>
+
+<script>
+window.addEventListener("load",init);
+var button;
+var imagediv;
+
+function init(){
+    imagediv = document.querySelector('#img');
+}
+
+// function removeimage(){
+    
+// }
+
+function print(data){
+    imagediv.innerHTML = "";
+
+    for(var i=0;i<data.length;i++){ 
+        console.log(data[i].images.fixed_width.url);
+        imagetag = document.createElement('img');
+        
+        imagetag.src = data[i].images.fixed_width.url;
+        imagediv.append(imagetag);
+    }
+}
+
+function fetchdata(){
+    var searchvalue = document.querySelector("#searchbox").value;
+    
+    var promise = fetch('http://api.giphy.com/v1/gifs/search?q='+searchvalue+'&api_key=decUze38UsaQRk50QvYzJjX0FR5rSazb&limit=10');
+    promise.then((res)=>{
+        res.json().then((data)=>{
+            console.log(data.data);
+            print(data.data);
+        })
+    })
+}
+
+
+</script>
+</body>
+</html>

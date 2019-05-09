@@ -1,0 +1,48 @@
+#container{
+    width: 100%;
+    height: 300px;
+    background-color: coral;   
+}
+
+#container p{
+    font-size: 30px;
+}
+
+/* @media(max-width:1200px){
+    #container{
+        background-color: aqua;
+        width: 50%;
+    }
+} */
+
+@media(max-width:1200px){
+    #contianer p{
+        font-size: 30px;
+    }
+}
+@media(max-width:768px)
+{
+    #container{
+        
+        background-color: blueviolet;
+    }
+    #container p{
+        font-size: 20px;
+    }
+}
+@media(max-width:480px){
+    #container{
+        background-color: brown;
+    }
+    #container p{
+        font-size: 10px;
+    }
+}
+
+/* 1200px
+992px
+768px
+480px
+320px */
+
+

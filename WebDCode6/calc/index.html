@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        
+    <script>
+        function add(){
+            var input1 = parseInt(document.getElementById("input1").value);
+            var input2 = parseInt(document.getElementById("input2").value);
+        
+            var sum = input1+input2;
+            var result = document.getElementById("result");
+            result.innerText = sum;
+        }
+        function mul(){
+            var input1 = parseInt(document.getElementById("input1").value);
+            var input2 = parseInt(document.getElementById("input2").value);
+            
+            var mul = input1*input2;
+            document.getElementById("result").innerText = mul;
+            
+        }
+        function sub(){
+            var input1 = parseInt(document.getElementById("input1").value);
+            var input2 = parseInt(document.getElementById("input2").value);
+            document.getElementById("result").innerText = input1-input2;
+            
+        }
+        function div(){
+            var input1 = parseInt(document.getElementById("input1").value);
+            var input2 = parseInt(document.getElementById("input2").value);
+            var div = input1/input2;
+           document.getElementById("result").innerText = div;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="input1" placeholder="input first value">
+    <input type="text" id="input2" placeholder="input second value"> 
+    <hr>
+    <button onclick="add()">ADD</button>
+    <button onclick="mul()">MUL</button>
+    <button onclick="sub()">SUB</button>
+    <button onclick="div()">DIV</button>
+    <p id="result"></p>
+
+</body>
+</html>
