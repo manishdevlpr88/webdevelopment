@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        // window.addEventListener("load",function(){})
+        $(document).ready(
+            function(){
+                $("#hide").on('click',function(){
+                    $("img").hide(1000);
+                })
+                $("#show").on('click',function(){
+                    $("img").show(1000);
+                })
+                $("#toggle").on('click',function(){
+                    $("img").toggle(1000);
+                })
+                $("#fin").on('click',function(){
+                    $("img").fadeIn(1000);
+                })
+                $("#fout").on('click',function(){
+                    $("img").fadeOut(1000);
+                })
+                $("#ftoggle").on('click',function(){
+                    $("img").fadeToggle(1000);
+                })
+                $("#sup").on('click',function(){
+                    $("img").slideUp();
+                })
+                $("#sdown").on('click',function(){
+                    $("img").slideDown();
+                })
+                $("#animate").on('click',function(){
+                    $("img").animate({
+                        left:'250px',
+                        height: '+=150px',
+                        width: '+=150px',
+                    });
+                })
+            }
+        );
+    </script>
+
+</head>
+<body>
+    <h1>jqyery Basic</h1>
+    <img src="https://cdn3.movieweb.com/i/article/u2ZHld9yvHVC7kY7a2PckHasXJuRKo/798:50/Tom-And-Jerry-Movie-Production-Start-Story-Details.jpg" alt="">
+    <hr>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="toggle">toggle</button>
+    <button id="fin">Fadein</button>
+    <button id="fout">Fadeout</button>
+    <button id="ftoggle">FadeToggle</button>
+    <button id="sup">Slideup</button>
+    <button id="sdown">SlideDown</button>
+    <button id="animate">animate</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Blur Event</h1>
+    <label for="">Enter Name</label>
+    <input type="text" placeholder="Enter Name" onblur="show(this)">
+    <span id="show"></span>
+    <script>
+        function show(obj){
+            var span = document.querySelector("#show");
+            console.log(obj);
+            if(obj.value == ""){
+                span.innerHTML = "Please fill this field";
+                obj.style.cssText = "color red";
+                obj.style.border = "1px solid red";
+            }
+            else{
+                span.innerHTML = "";
+                obj.style.border = "4px solid green";
+            }
+        }
+    </script>
+</body>
+</html>

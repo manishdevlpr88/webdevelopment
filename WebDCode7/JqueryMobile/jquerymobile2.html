@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="#" class="ui-btn"> this is anchor tag</a>
+    <button class="ui-btn">this is button</button>
+
+    <a href="" class="ui-btn ui-corner-all ui-btn-a">round corner anchor</a>
+    <button class="ui-btn ui-corner-all ui-btn-b">round corner button</button> -->
+
+    <form>
+        <label for="slider-3">Slider:</label>
+        <input type="range" name="slider-3" id="slider-3" data-track-theme="b" data-theme="b" min="0" max="100" value="50">
+    </form>
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Banana</a></li>
+                <li><a href="#">Cherry</a></li>
+                <li><a href="#">Cranberry</a></li>
+                <li><a href="#">Grape</a></li>
+                <li><a href="#">Orange</a></li>
+            </ul>
+    <table data-role="table" id="phone-table" data-mode="columntoggle" data-column-btn-text="Compare..." data-column-btn-theme="a" class="phone-compare ui-shadow table-stroke">
+              <thead>
+                <tr>
+                  <th class="label">Model</th>
+                <th>
+                    <h4>Apple</h4>
+                    <h3>iPhone 5</h3>
+                </th>
+                <th data-priority="1">
+                    <h4>Samsung</h4>
+                    <h3>Galaxy S III</h3>
+                </th>
+                <th data-priority="2">
+                    <h4>Nokia</h4>
+                    <h3>Lumia 920</h3>
+                </th>
+                <th data-priority="3">
+                    <h4>HTC</h4>
+                    <h3>One X</h3>
+                </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="photos">
+                  <th class="label">Photo</th>
+                  <td><a href="#img-iphone5" data-rel="popup" data-position-to="window"><img src="https://www.airtel.in/app/tc-service/airtel-devices-platform/rest/devices/image/v1/getImage?imageURL=/devices/googxl128/black-2.png?mediumThumbnail"></a></td>
+                  <td><a href="#img-galaxy" data-rel="popup" data-position-to="window"><img src="https://www.motorola.in/sites/default/files/library/in/products/moto-g-power-gen-7/moto-g7-power-1000_1.jpg"></a></td>
+                  <td><a href="#img-lumia" data-rel="popup" data-position-to="window"><img src="https://mobile.panasonic.com/content/products/Eluga-x1/flagship/Eluga-x1.png"></a></td>
+                  <td><a href="#img-onex" data-rel="popup" data-position-to="window"><img src="http://www.xolo.in/Discover_image/89667.png"></a></td>
+                </tr>
+                <tr>
+                  <th class="label">Height</th>
+                  <td>4.87"</td>
+                  <td>5.38"</td>
+                  <td>5.11"</td>
+                  <td>5.3"</td>
+                </tr>
+                <tr>
+                  <th class="label">Width</th>
+                  <td>2.31"</td>
+                  <td>2.78"</td>
+                  <td>2.79"</td>
+                  <td>2.75"</td>
+                </tr>
+                <tr>
+                  <th class="label">Depth</th>
+                  <td>0.3"</td>
+                  <td>0.34"</td>
+                  <td>0.42"</td>
+                  <td>0.37"</td>
+                </tr>
+                <tr>
+                  <th class="label">Weight (lbs.)</th>
+                  <td>0.25</td>
+                  <td>0.29</td>
+                  <td>0.41</td>
+                  <td>0.29</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Popups for lightbox images -->
+            <div id="img-iphone5" data-role="popup" data-overlay-theme="a">
+                <img src="https://images.unsplash.com/photo-1521939094609-93aba1af40d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+            </div>
+            <div id="img-galaxy" data-role="popup" data-overlay-theme="a">
+                <img src="https://n1.sdlcdn.com/imgs/h/m/h/Vivo-Black-Y83-Pro-64GB-SDL855025413-1-0a4d1.jpeg">
+            </div>
+            <div id="img-lumia" data-role="popup" data-overlay-theme="a">
+                <img src="https://www.motorola.in/sites/default/files/library/in/products/moto-g-power-gen-7/moto-g7-power-1000_1.jpg">
+            </div>
+            <div id="img-onex" data-role="popup" data-overlay-theme="a">
+                <img src="https://www.airtel.in/app/tc-service/airtel-devices-platform/rest/devices/image/v1/getImage?imageURL=/devices/googxl128/black-2.png?mediumThumbnail">
+            </div>
+</body>
+</html>

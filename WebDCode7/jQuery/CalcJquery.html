@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Calc</h2>
+    <table>
+        <tr>
+            <td><lable>Enter first Number</lable></td>
+            <td><input type="text" id="input1" placeholder="first number"></td>
+        </tr>
+        <tr>
+            <td><label>Enter second Number</label></td>
+            <td><input type="text" id="input2" placeholder="second number"></td>
+        </tr>
+    </table>
+    result :
+    <p></p>
+    <hr>
+    <button>+</button>
+    <button>-</button>
+    <button>*</button>
+    <button>/</button>
+    <script>
+        $(document).ready(function(){
+            $("button").on("click",function(){
+            var input1;
+            var input2;
+            var opr;
+            var expres;
+            var p;
+
+            p = $("p");
+            opr = $(this).html();
+            input1 = $("#input1").val();
+            input2 = $("#input2").val();
+            expres = input1+opr+input2;
+            p.html(eval(expres));
+
+            console.log(opr);
+            console.log(input1);
+            console.log(input2);
+            console.log(expres);
+            })
+        
+        })
+    </script>
+</body>
+</html>

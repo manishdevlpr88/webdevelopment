@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var searchvalue = $("#searchvalue").val();
+                console.log(searchvalue);
+                $.ajax(
+                    {
+                        url: 'http://api.giphy.com/v1/gifs/search?q='+searchvalue+'&api_key=decUze38UsaQRk50QvYzJjX0FR5rSazb&limit=20',
+                        method: "GET",
+                        success: function(element){
+                            console.log(element.data);
+                            element.data.forEach((element) => {
+                                console.log(element.images.fixed_width.url);
+                                var image = document.createElement("img");
+                                image.src = element.images.fixed_width.url;
+                                $("#imagesdiv").append(image);
+                            });
+
+                        }
+                    }
+                )
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2>Ajax call by jQuery</h2>
+    <input type="search value" id="searchvalue">
+    <button>Ajax call</button>
+    <div id="imagesdiv">
+
+    </div>
+</body>
+</html>
