@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .bgimage{
+            background-image: url(./img/image1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="home">
+
+        <div data-role="header">
+            <h1>Home Page</h1>
+        </div><!-- /header -->
+        <!-- <img src="./img/image1.jpg" alt=""> -->
+        <div role="main" class="ui-content bgimage">
+            <!-- <img src="./img/image1.jpg" alt=""> -->
+            <!-- <img src="./image1.jpg" alt=""> -->
+            <a href="#login" class="ui-btn ui-shadow" data-transition="flow">Login</a>
+            <a href="#signup" class="ui-btn ui-shadow">Signup</a>
+        </div><!-- /content -->
+    
+        <div data-role="footer">
+            <h4>copyrighted by anyname</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    <div data-role="page" id="login">
+
+        <div data-role="header">
+            <h1>Login page</h1>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <a href="#home" data-transition="pop">back</a>
+            <label for="User">UserName:</label>
+            <input type="text" name="User" id="password" value="" autocomplete="off">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="" autocomplete="off">
+            <button class="ui-btn ui-mini">Login</button>
+            <button class="ui-btn ui-mini">Signup</button>
+        </div><!-- /content -->
+    
+        <div data-role="footer">
+            <h4>copyrighted by anyname</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    <div data-role="page" id="signup">
+
+        <div data-role="header">
+            <h1>Signup Page</h1>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <a href="#home">back</a>
+            <label for="User">UserName:</label>
+            <input type="text" name="User" id="password" value="" autocomplete="off">
+            <label for="User">Password:</label>
+            <input type="password" name="User" id="password" value="" autocomplete="off">
+            <label for="User">Confirm-password:</label>
+            <input type="password" name="User" id="password" value="" autocomplete="off">
+            <label for="dob">select DOB:</label>
+            <input type="text" data-role="date" name="dob" data-inline="true">
+            <label for="slider-fill">select age:</label>
+            <input type="range" name="slider-fill" id="slider-fill" value="60" min="16" max="80" step="50" data-highlight="true">
+            <label for="slider-flip-m">Select Genter:</label>
+            <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true">
+                <option value="male">Male</option>
+                <option value="female" selected="">Female</option>
+            </select>
+                    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+                    <p>I am agree with this terms and conditions</p> 
+                    <button class="ui-btn ui-mini">Signup</button>
+        </div><!-- /content -->
+    
+        <div data-role="footer">
+            <h4>copyrighted by anyname</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
